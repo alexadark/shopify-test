@@ -30,7 +30,12 @@ export const StoreProvider = ({ children }) => {
         newCheckout.id,
         lineItems
       )
-      console.log(addItems.webUrl)
+      console.log(
+        "checkout url",
+        addItems.webUrl,
+        "line items",
+        addItems.lineItems
+      )
     } catch (error) {
       console.log(error)
     }
